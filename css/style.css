@@ -1,0 +1,26 @@
+main {
+  background-color: black;
+}
+
+.calculator__card-1 {
+  background-color: var(--Very_dark_desaturated_blue1);
+  display: grid;
+  grid-template-areas: 
+  "row1"
+  "row2"
+  "row3"
+  "row4"
+  "row5"
+  "row6"
+  "row7"
+  "row8";
+  grid-template-columns: auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
