@@ -26,6 +26,11 @@ body {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
+  margin-left: 0.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: var(--White);
 }
 
 .calculator__theme {
@@ -33,27 +38,25 @@ body {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  color: var(--White);
 }
 
-.theme__selector1 {
+.theme__selector {
   grid-column-start: 4;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-}
-
-.theme__selector2 {
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.theme__selector3 {
-  grid-column-start: 4;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.2rem;
+  font-size: 18px;
+  color: var(--White);
 }
 
 .theme__button {
@@ -61,6 +64,9 @@ body {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+  background-color: var(--Very_dark_desaturated_blue2);
+  margin: 0.2rem;
+  border-radius: 5px;
 }
 
 .calculator__display {
@@ -68,7 +74,10 @@ body {
   grid-column-end: 5;
   grid-row-start: 3;
   grid-row-end: 4;
-  background-color: var(--Very_dark_desaturated_blue2);
+  background-color: var(--Very_dark_desaturated_blue3);
+  margin: 0.2rem;
+  border-radius: 5px;
+  color: var(--White);
 }
 
 #btn7 {
@@ -191,14 +200,38 @@ body {
 }
 
 #btn-equal {
- grid-column-start: 3;
+  grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 8;
   grid-row-end: 9;
 }
 
+.calculator__button,
+.calculator__button-cmd,
+.calculator__button-equal {
+  margin: 0.2rem;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  font-size: 32px;
+  background-color: var(--Light_grayish_orange);
+  color: var(--Very_dark_grayish_blue);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.calculator__button-cmd {
+  background-color: var(--Desaturated_dark_blue1);
+color: var(--White);
+}
+
+.calculator__button-equal {
+  background-color: var(--Red);
+color: var(--White);
+}
+
 .attribution {
-  color: white;
+ color: var(--White);
   font-size: 11px;
   text-align: center;
 }
