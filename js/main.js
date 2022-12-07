@@ -86,7 +86,7 @@ function captureScreen(prmt) {
       break;
     case ".":
       if (screen.innerHTML.includes(".") == true) {
-        alert("Cannot add . again")
+        alert("Cannot add . again");
       } else {
         screen.innerHTML += prmt.value;
       }
@@ -129,20 +129,34 @@ function result() {
   if (plusStatus == true) {
     secondNumber = parseFloat(screen.innerHTML);
     resultDisplayed = plusOperator + secondNumber;
-    screen.innerHTML = resultDisplayed;
+    if (screen.innerHTML == "") {
+      alert("Realize uma operação válida");
+    } else {
+      screen.innerHTML = resultDisplayed;
+    }
   } else if (minusStatus == true) {
     secondNumber = parseFloat(screen.innerHTML);
     resultDisplayed = minusOperator - secondNumber;
-    screen.innerHTML = resultDisplayed;
+    if (screen.innerHTML == "") {
+      alert("Realize uma operação válida");
+    } else {
+      screen.innerHTML = resultDisplayed;
+    }
   } else if (multStatus == true) {
     secondNumber = parseFloat(screen.innerHTML);
     resultDisplayed = multiOperator * secondNumber;
-    screen.innerHTML = resultDisplayed;
+    if (screen.innerHTML == "") {
+      alert("Realize uma operação válida");
+    } else {
+      screen.innerHTML = resultDisplayed;
+    }
   } else if (divideStatus == true) {
     secondNumber = parseFloat(screen.innerHTML);
     resultDisplayed = divideOperator / secondNumber;
     if (resultDisplayed == "Infinity") {
       screen.innerHTML = 0;
+    } else if (screen.innerHTML == "") {
+      alert("Realize uma operação válida");
     } else {
       screen.innerHTML = resultDisplayed;
     }
