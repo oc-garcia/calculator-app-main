@@ -52,7 +52,7 @@ body {
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 0.2rem;
   font-size: 18px;
@@ -66,7 +66,19 @@ body {
   grid-row-end: 3;
   background-color: var(--Very_dark_desaturated_blue2);
   margin: 0.2rem;
+  padding: 0.2rem;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.theme__dot {
+  background-color: var(--Red);
+  width: 20%;
+  height: 60%;
+  border-radius: 50%;
+  border: none;
 }
 
 .calculator__display {
@@ -78,6 +90,10 @@ body {
   margin: 0.2rem;
   border-radius: 5px;
   color: var(--White);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 0.2rem;
 }
 
 #btn7 {
