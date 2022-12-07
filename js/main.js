@@ -3,7 +3,7 @@ let screen = document.getElementById("screen");
 let resetBtn = document.getElementById("reset");
 let plus = document.getElementById("btn-plus");
 let equal = document.getElementById("btn-equal");
-let x;
+let x = sum();
 let y;
 
 for (let i = 0; i < btns.length; i++) {
@@ -16,6 +16,12 @@ equal.addEventListener("click", result);
 
 function reset() {
   screen.innerHTML = "";
+  /* NÃO FUNCIONOU AINDA.
+  if (x != NaN) {
+    console.log(x)
+    return sum(0);
+  }
+  */
 }
 
 function captureScreen(prmt) {
@@ -60,15 +66,13 @@ function captureScreen(prmt) {
 }
 
 function sum(x) {
-  console.log(x);
   return x;
 }
 
 function result() {
-  if (sum() != NaN) {
-    console.log(sum())
+  if (x != NaN) {
     y = parseFloat(screen.innerHTML);
-    z = sum() + y;
+    z = x + y;
     screen.innerHTML = z;
   }
 }
