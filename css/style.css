@@ -59,7 +59,7 @@ body {
   color: var(--White);
 }
 
-.theme__button {
+.theme__button1 {
   grid-column-start: 4;
   grid-column-end: 4;
   grid-row-start: 2;
@@ -73,11 +73,42 @@ body {
   cursor: pointer;
 }
 
+.theme__button2 {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: var(--Very_dark_desaturated_blue2);
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.theme__button3 {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: var(--Very_dark_desaturated_blue2);
+  margin: 0.2rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  justify-content: flex-end;
+}
+
 .theme__dot {
   background-color: var(--Red);
-  width: 20%;
-  height: 60%;
-  border-radius: 50%;
+  width: 30%;
+  height: 80%;
+  border-radius: 5px;
   border: none;
 }
 
@@ -238,16 +269,16 @@ body {
 
 .calculator__button-cmd {
   background-color: var(--Desaturated_dark_blue1);
-color: var(--White);
+  color: var(--White);
 }
 
 .calculator__button-equal {
   background-color: var(--Red);
-color: var(--White);
+  color: var(--White);
 }
 
 .attribution {
- color: var(--White);
+  color: var(--White);
   font-size: 11px;
   text-align: center;
 }

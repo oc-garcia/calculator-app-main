@@ -1,3 +1,5 @@
+//Calculator
+
 let btns = document.querySelectorAll("button.calculator__button");
 let screen = document.getElementById("screen");
 
@@ -160,5 +162,20 @@ function result() {
     } else {
       screen.innerHTML = resultDisplayed;
     }
+  }
+}
+
+// Theme
+let themeBtn = document.getElementById("themefield");
+
+themeBtn.addEventListener("click", changeTheme);
+
+function changeTheme() {
+  if (themeBtn.className == "theme__button1") {
+    themeBtn.className = "theme__button2";
+  } else if (themeBtn.className == "theme__button2") {
+    themeBtn.className = "theme__button3";
+  } else if (themeBtn.className == "theme__button3") {
+    themeBtn.className = "theme__button1";
   }
 }

@@ -54,7 +54,7 @@
   --Very_dark_blue: hsl(198, 20%, 13%);
 
   /**/
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-size: 32px;
+  --time_transition: 0.5s;
 }
-
