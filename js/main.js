@@ -1,27 +1,19 @@
 let btns = document.querySelectorAll("button.calculator__button");
 let screen = document.getElementById("screen");
-let resetBtn = document.getElementById("reset");
-let plus = document.getElementById("btn-plus");
-let equal = document.getElementById("btn-equal");
-let x = sum();
-let y;
+
+let plusOperator = sum();
+let minusOperator = minus();
+let multiOperator = multiply();
+let divideOperator = divide();
+let secondNumber;
+
+let plusStatus = false;
+let minusStatus = false;
+let multStatus = false;
+let divideStatus = false;
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", () => captureScreen(btns[i]));
-}
-
-resetBtn.addEventListener("click", reset);
-plus.addEventListener("click", sum);
-equal.addEventListener("click", result);
-
-function reset() {
-  screen.innerHTML = "";
-  /* NÃO FUNCIONOU AINDA.
-  if (x != NaN) {
-    console.log(x)
-    return sum(0);
-  }
-  */
 }
 
 function captureScreen(prmt) {
@@ -57,22 +49,102 @@ function captureScreen(prmt) {
       screen.innerHTML += prmt.value;
       return parseFloat(screen.innerHTML);
     case "+":
-      x = parseFloat(screen.innerHTML);
+      plusOperator = parseFloat(screen.innerHTML);
       screen.innerHTML = "";
-      sum(x);
+      sum(plusOperator);
+      plusStatus = true;
+      minusStatus = false;
+      multStatus = false;
+      divideStatus = false;
+      break;
+    case "-":
+      minusOperator = parseFloat(screen.innerHTML);
+      screen.innerHTML = "";
+      minus(minusOperator);
+      plusStatus = false;
+      minusStatus = true;
+      multStatus = false;
+      divideStatus = false;
+      break;
+    case "*":
+      multiOperator = parseFloat(screen.innerHTML);
+      screen.innerHTML = "";
+      multiply(multiOperator);
+      plusStatus = false;
+      minusStatus = false;
+      multStatus = true;
+      divideStatus = false;
+      break;
+    case "/":
+      divideOperator = parseFloat(screen.innerHTML);
+      screen.innerHTML = "";
+      divide(divideOperator);
+      plusStatus = false;
+      minusStatus = false;
+      multStatus = false;
+      divideStatus = true;
+      break;
+    case ".":
+      if (screen.innerHTML.includes(".") == true) {
+        alert("Cannot add . again")
+      } else {
+        screen.innerHTML += prmt.value;
+      }
+      break;
+    case "erase":
+      screen.innerHTML = "";
+      break;
+    case "RESET":
+      screen.innerHTML = "";
+      plusStatus = false;
+      minusStatus = false;
+      multStatus = false;
+      divideStatus = false;
+      break;
+    case "=":
+      result();
+      break;
     default:
       break;
   }
 }
 
-function sum(x) {
-  return x;
+function sum(plusOperator) {
+  return plusOperator;
+}
+
+function minus(minusOperator) {
+  return minusOperator;
+}
+
+function multiply(multiOperator) {
+  return multiOperator;
+}
+
+function divide(divideOperator) {
+  return divideOperator;
 }
 
 function result() {
-  if (x != NaN) {
-    y = parseFloat(screen.innerHTML);
-    z = x + y;
-    screen.innerHTML = z;
+  if (plusStatus == true) {
+    secondNumber = parseFloat(screen.innerHTML);
+    resultDisplayed = plusOperator + secondNumber;
+    screen.innerHTML = resultDisplayed;
+  } else if (minusStatus == true) {
+    secondNumber = parseFloat(screen.innerHTML);
+    resultDisplayed = minusOperator - secondNumber;
+    screen.innerHTML = resultDisplayed;
+  } else if (multStatus == true) {
+    secondNumber = parseFloat(screen.innerHTML);
+    resultDisplayed = multiOperator * secondNumber;
+    screen.innerHTML = resultDisplayed;
+  } else if (divideStatus == true) {
+    secondNumber = parseFloat(screen.innerHTML);
+    resultDisplayed = divideOperator / secondNumber;
+    if (resultDisplayed == "Infinity") {
+      screen.innerHTML = 0;
+    } else {
+      screen.innerHTML = resultDisplayed;
+    }
   }
 }
