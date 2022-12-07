@@ -130,7 +130,7 @@ function result() {
     secondNumber = parseFloat(screen.innerHTML);
     resultDisplayed = plusOperator + secondNumber;
     if (screen.innerHTML == "") {
-      alert("Realize uma operação válida");
+      alert("Not a valid operation");
     } else {
       screen.innerHTML = resultDisplayed;
     }
@@ -138,7 +138,7 @@ function result() {
     secondNumber = parseFloat(screen.innerHTML);
     resultDisplayed = minusOperator - secondNumber;
     if (screen.innerHTML == "") {
-      alert("Realize uma operação válida");
+      alert("Not a valid operation");
     } else {
       screen.innerHTML = resultDisplayed;
     }
@@ -146,7 +146,7 @@ function result() {
     secondNumber = parseFloat(screen.innerHTML);
     resultDisplayed = multiOperator * secondNumber;
     if (screen.innerHTML == "") {
-      alert("Realize uma operação válida");
+      alert("Not a valid operation");
     } else {
       screen.innerHTML = resultDisplayed;
     }
@@ -156,7 +156,7 @@ function result() {
     if (resultDisplayed == "Infinity") {
       screen.innerHTML = 0;
     } else if (screen.innerHTML == "") {
-      alert("Realize uma operação válida");
+      alert("Not a valid operation");
     } else {
       screen.innerHTML = resultDisplayed;
     }
