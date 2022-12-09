@@ -11,7 +11,7 @@ body {
 }
 
 .calculator__card-1 {
-  margin: 5%;
+  margin: 3%;
   height: 60vh;
   padding: 0.5rem;
   background-color: var(--main_background);
