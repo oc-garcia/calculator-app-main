@@ -173,13 +173,13 @@ themeBtn.addEventListener("click", changeTheme);
 function changeTheme() {
   if (themeBtn.className == "theme__button1") {
     themeBtn.className = "theme__button2";
-    setTheme("theme1");
+    setTheme("theme2");
   } else if (themeBtn.className == "theme__button2") {
     themeBtn.className = "theme__button3";
-    setTheme("theme2");
+    setTheme("theme3");
   } else if (themeBtn.className == "theme__button3") {
     themeBtn.className = "theme__button1";
-    setTheme("theme3");
+    setTheme("theme1");
   }
 }
 
@@ -188,16 +188,7 @@ function setTheme(themeName) {
   localStorage.setItem("theme", themeName);
   document.documentElement.className = themeName;
 }
-// function to toggle between light and dark theme
-function toggleTheme() {
-  if (localStorage.getItem("theme") === "theme1") {
-    setTheme("theme1");
-  } else if (localStorage.getItem("theme") === "theme2") {
-    setTheme("theme2");
-  } else {
-    setTheme("theme3");
-  }
-}
+
 // Immediately invoked function to set the theme on initial load
 (function () {
   if (localStorage.getItem("theme") === "theme1") {
