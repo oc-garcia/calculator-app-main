@@ -167,6 +167,9 @@ function result() {
 
 // Theme
 let themeBtn = document.getElementById("themefield");
+let calcName = document.getElementById("calcName");
+let calcTheme = document.getElementById("calcTheme");
+let calcSelector = document.getElementById("calcSelector");
 
 themeBtn.addEventListener("click", changeTheme);
 
@@ -174,12 +177,24 @@ function changeTheme() {
   if (themeBtn.className == "theme__button1") {
     themeBtn.className = "theme__button2";
     setTheme("theme2");
+    calcName.className = "calculator__name";
+    calcTheme.className = "calculator__theme";
+    calcSelector.className = "theme__selector";
+    screen.className = "calculator__display";
   } else if (themeBtn.className == "theme__button2") {
     themeBtn.className = "theme__button3";
     setTheme("theme3");
+    calcName.className = "calculator__name";
+    calcTheme.className = "calculator__theme";
+    calcSelector.className = "theme__selector";
+    screen.className = "calculator__display";
   } else if (themeBtn.className == "theme__button3") {
     themeBtn.className = "theme__button1";
     setTheme("theme1");
+    calcName.className = "calculator__name-theme1";
+    calcTheme.className = "calculator__theme-theme1";
+    calcSelector.className = "theme__selector-theme1";
+    screen.className = "calculator__display-theme1";
   }
 }
 
