@@ -11,7 +11,7 @@ body {
 }
 
 .calculator__card-1 {
-  margin: 10%;
+  margin: 5%;
   height: 60vh;
   padding: 0.5rem;
   background-color: var(--main_background);
@@ -342,7 +342,7 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
-.calculator__card-1 {
-  margin: 25%;
-}
+  .calculator__card-1 {
+    margin: 25%;
+  }
 }
