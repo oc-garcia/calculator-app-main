@@ -340,3 +340,9 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media only screen and (min-width: 600px) {
+.calculator__card-1 {
+  margin: 25%;
+}
+}
