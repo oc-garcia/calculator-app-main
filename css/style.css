@@ -343,6 +343,6 @@ body {
 
 @media only screen and (min-width: 600px) {
   .calculator__card-1 {
-    margin: 0% 25%;
+    margin: 3% 25%;
   }
 }
