@@ -21,7 +21,7 @@ for (let i = 0; i < btns.length; i++) {
 function captureScreen(prmt) {
   switch (prmt.value) {
     case "1":
-      if (screen.innerHTML.length > 25) {
+      if (screen.innerHTML.length > 20) {
         alert("Too many numbers");
       } else {
         screen.innerHTML += prmt.value;
@@ -29,7 +29,7 @@ function captureScreen(prmt) {
       }
       break;
     case "2":
-      if (screen.innerHTML.length > 25) {
+      if (screen.innerHTML.length > 20) {
         alert("Too many numbers");
       } else {
         screen.innerHTML += prmt.value;
@@ -37,7 +37,7 @@ function captureScreen(prmt) {
       }
       break;
     case "3":
-      if (screen.innerHTML.length > 25) {
+      if (screen.innerHTML.length > 20) {
         alert("Too many numbers");
       } else {
         screen.innerHTML += prmt.value;
@@ -45,7 +45,7 @@ function captureScreen(prmt) {
       }
       break;
     case "4":
-      if (screen.innerHTML.length > 25) {
+      if (screen.innerHTML.length > 20) {
         alert("Too many numbers");
       } else {
         screen.innerHTML += prmt.value;
@@ -53,7 +53,7 @@ function captureScreen(prmt) {
       }
       break;
     case "5":
-      if (screen.innerHTML.length > 25) {
+      if (screen.innerHTML.length > 20) {
         alert("Too many numbers");
       } else {
         screen.innerHTML += prmt.value;
@@ -61,7 +61,7 @@ function captureScreen(prmt) {
       }
       break;
     case "6":
-      if (screen.innerHTML.length > 25) {
+      if (screen.innerHTML.length > 20) {
         alert("Too many numbers");
       } else {
         screen.innerHTML += prmt.value;
@@ -69,7 +69,7 @@ function captureScreen(prmt) {
       }
       break;
     case "7":
-      if (screen.innerHTML.length > 25) {
+      if (screen.innerHTML.length > 20) {
         alert("Too many numbers");
       } else {
         screen.innerHTML += prmt.value;
@@ -77,7 +77,7 @@ function captureScreen(prmt) {
       }
       break;
     case "8":
-      if (screen.innerHTML.length > 25) {
+      if (screen.innerHTML.length > 20) {
         alert("Too many numbers");
       } else {
         screen.innerHTML += prmt.value;
@@ -85,7 +85,7 @@ function captureScreen(prmt) {
       }
       break;
     case "9":
-      if (screen.innerHTML.length > 25) {
+      if (screen.innerHTML.length > 20) {
         alert("Too many numbers");
       } else {
         screen.innerHTML += prmt.value;
@@ -93,7 +93,7 @@ function captureScreen(prmt) {
       }
       break;
     case "0":
-      if (screen.innerHTML.length > 25) {
+      if (screen.innerHTML.length > 20) {
         alert("Too many numbers");
       } else {
         screen.innerHTML += prmt.value;
