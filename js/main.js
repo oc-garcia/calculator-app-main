@@ -21,35 +21,85 @@ for (let i = 0; i < btns.length; i++) {
 function captureScreen(prmt) {
   switch (prmt.value) {
     case "1":
-      screen.innerHTML += prmt.value;
-      return parseFloat(screen.innerHTML);
+      if (screen.innerHTML.length > 25) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += prmt.value;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
     case "2":
-      screen.innerHTML += prmt.value;
-      return parseFloat(screen.innerHTML);
+      if (screen.innerHTML.length > 25) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += prmt.value;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
     case "3":
-      screen.innerHTML += prmt.value;
-      return parseFloat(screen.innerHTML);
+      if (screen.innerHTML.length > 25) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += prmt.value;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
     case "4":
-      screen.innerHTML += prmt.value;
-      return parseFloat(screen.innerHTML);
+      if (screen.innerHTML.length > 25) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += prmt.value;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
     case "5":
-      screen.innerHTML += prmt.value;
-      return parseFloat(screen.innerHTML);
+      if (screen.innerHTML.length > 25) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += prmt.value;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
     case "6":
-      screen.innerHTML += prmt.value;
-      return parseFloat(screen.innerHTML);
+      if (screen.innerHTML.length > 25) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += prmt.value;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
     case "7":
-      screen.innerHTML += prmt.value;
-      return parseFloat(screen.innerHTML);
+      if (screen.innerHTML.length > 25) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += prmt.value;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
     case "8":
-      screen.innerHTML += prmt.value;
-      return parseFloat(screen.innerHTML);
+      if (screen.innerHTML.length > 25) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += prmt.value;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
     case "9":
-      screen.innerHTML += prmt.value;
-      return parseFloat(screen.innerHTML);
+      if (screen.innerHTML.length > 25) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += prmt.value;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
     case "0":
-      screen.innerHTML += prmt.value;
-      return parseFloat(screen.innerHTML);
+      if (screen.innerHTML.length > 25) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += prmt.value;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
     case "+":
       plusOperator = parseFloat(screen.innerHTML);
       screen.innerHTML = "";
