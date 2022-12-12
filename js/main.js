@@ -18,6 +18,149 @@ for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", () => captureScreen(btns[i]));
 }
 
+document.addEventListener("keyup", (event) => {
+  switch (event.key) {
+    case "1":
+      if (screen.innerHTML.length > 20) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += event.key;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
+    case "2":
+      if (screen.innerHTML.length > 20) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += event.key;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
+    case "3":
+      if (screen.innerHTML.length > 20) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += event.key;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
+    case "4":
+      if (screen.innerHTML.length > 20) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += event.key;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
+    case "5":
+      if (screen.innerHTML.length > 20) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += event.key;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
+    case "6":
+      if (screen.innerHTML.length > 20) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += event.key;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
+    case "7":
+      if (screen.innerHTML.length > 20) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += event.key;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
+    case "8":
+      if (screen.innerHTML.length > 20) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += event.key;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
+    case "9":
+      if (screen.innerHTML.length > 20) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += event.key;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
+    case "0":
+      if (screen.innerHTML.length > 20) {
+        alert("Too many numbers");
+      } else {
+        screen.innerHTML += event.key;
+        return parseFloat(screen.innerHTML);
+      }
+      break;
+    case "+":
+      plusOperator = parseFloat(screen.innerHTML);
+      screen.innerHTML = "";
+      sum(plusOperator);
+      plusStatus = true;
+      minusStatus = false;
+      multStatus = false;
+      divideStatus = false;
+      break;
+    case "-":
+      minusOperator = parseFloat(screen.innerHTML);
+      screen.innerHTML = "";
+      minus(minusOperator);
+      plusStatus = false;
+      minusStatus = true;
+      multStatus = false;
+      divideStatus = false;
+      break;
+    case "*":
+      multiOperator = parseFloat(screen.innerHTML);
+      screen.innerHTML = "";
+      multiply(multiOperator);
+      plusStatus = false;
+      minusStatus = false;
+      multStatus = true;
+      divideStatus = false;
+      break;
+    case "/":
+      divideOperator = parseFloat(screen.innerHTML);
+      screen.innerHTML = "";
+      divide(divideOperator);
+      plusStatus = false;
+      minusStatus = false;
+      multStatus = false;
+      divideStatus = true;
+      break;
+    case ".":
+      if (screen.innerHTML.includes(".") == true) {
+        alert("Cannot add . again");
+      } else {
+        screen.innerHTML += event.key;
+      }
+      break;
+    case "Backspace":
+      screen.innerHTML = "";
+      break;
+    case "Delete":
+      screen.innerHTML = "";
+      plusStatus = false;
+      minusStatus = false;
+      multStatus = false;
+      divideStatus = false;
+      break;
+    case "Enter":
+      result();
+    default:
+      break;
+  }
+  console.log(event.key);
+});
+
 function captureScreen(prmt) {
   switch (prmt.value) {
     case "1":
