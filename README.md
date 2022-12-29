@@ -2,8 +2,8 @@
 | -------------  | --- |
 |Nome        | **Calculator app**
 |Tecnologias | HTML, CSS, JavaScript
-|URL         | https://oc-garcia.github.io/calculator-app-main/
-|Desafio     | https://url-do-desafio.com.br
+|Deploy         | https://oc-garcia.github.io/calculator-app-main/
+|Repository     | https://github.com/oc-garcia/calculator-app-main
 
 ![](./design/Project_concluded.png#vitrinedev)
 
