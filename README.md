@@ -1,5 +1,4 @@
-#Calculator app
-
+|Name        | Calculator App
 |Tecnologies | HTML, CSS, JavaScript
 |Deploy         | https://oc-garcia.github.io/calculator-app-main/
 |Repository     | https://github.com/oc-garcia/calculator-app-main
